@@ -1,0 +1,36 @@
+1. Overview
+	* This tool is used to scan Java ctags files and generate dot file.
+	Then use graphviz dot to get a class relationship diagram.
+	* Only for testing, not stable.
+	
+1. Requirement
+	* Windows XP
+	* dot
+		http://www.graphviz.org/Download.php
+	* JDK 1.6
+		http://www.oracle.com/technetwork/java/javase/downloads/index.html
+	* Eclipse
+		http://www.eclipse.org/
+	* ANTLR & ANTLRWorks
+		http://www.antlr.org/
+	* Exuberant Ctags
+		http://ctags.sourceforge.net/
+		
+2. Build
+	* If you want to generate parser and lexer source files, run gen_antlr.bat.
+	* Use eclipse to import the project path and compile it, or run compile.bat.
+	
+3. Test & Run
+	* Put ctags.exe to this folder.
+	* Put the Java source files to java_src. (Remove original files first)
+	* Run run_gendot_java.bat, it will process the folder java_src,
+	and generate the output file output.txt, out.dot and out.gif.
+	* Open out.gif.
+
+4. Test data
+	* Test data is from Android 2.2 java source tree.
+		http://www.android.com/
+
+5. Bugs
+	* This tool has many bugs to fix, mainly in SimpleJavaCtags.g
+
